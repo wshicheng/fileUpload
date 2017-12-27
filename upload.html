@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_397862_hzv2ojx6nj24kj4i.css">
+    <style>
+        *{margin:0;padding:0;}
+        body,html{font-size:62.5%}
+        div.container{
+            padding:2rem;
+            width: 50rem;
+            height: 40rem;
+            margin: 5rem auto;
+            border: 0.1rem solid rgba(0,0,0,5);
+            box-shadow: 0.5rem 0px 1.5rem 0.4rem rgba(0,0,0,.5);
+        }
+        div.container div.header{height:4rem;line-height:4rem;}
+        i.upload{font-size: 3rem;color: #33acd6;cursor:pointer;}
+        div.hiddenFile{visibility: hidden}
+    </style>
+</head>
+<body>
+   <div class="container">
+      
+       <div class="body">
+        <form enctype="multipart/form-data" action="http://127.0.0.1:3000/upload" method="post"> 
+            <div class="upload">
+                <i class="upload iconfont icon-shangchuan"></i>
+            </div>
+            <div class="hiddenFile">
+                <input type="file" name="uploadImg"/>
+            </div>
+            <button type="submit">提交</button>
+        </form>
+       </div>
+   </div>
+</body>
+</html>
